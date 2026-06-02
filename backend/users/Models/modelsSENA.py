@@ -8,18 +8,19 @@ class Person(models.Model):
     password = models.CharField(max_length=255)
  
     DOC_TYPES = [
-        ('CC', 'Cédula'),
-        ('CE', 'Cédula Extranjería'),
-        ('TI', 'Tarjeta Identidad'),
-        ('PS', 'Pasaporte'),
-        ('OT', 'Otro'),
-    ]
+    ('CC', 'Cédula'),
+    ('CE', 'Cédula Extranjería'),
+    ('TI', 'Tarjeta Identidad'),
+    ('PS', 'Pasaporte'),      # frontend enviaba PP, cambia el front o el back
+    ('OT', 'Otro'),
+]
+    
     doc_type = models.CharField(max_length=5, choices=DOC_TYPES)
     doc_num = models.CharField(max_length=50, unique=True)
  
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    phone_num = models.IntegerField(null=True, blank=True)
+    phone_num = models.BigIntegerField(null=True, blank=True)
  
     PERSTATUS_CHOICES = [
         ('ACTIVO', 'Activo'),

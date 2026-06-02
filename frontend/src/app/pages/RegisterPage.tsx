@@ -95,9 +95,9 @@ export function RegisterPage() {
     { value: "CC", label: "Cedula de Ciudadania" },
     { value: "TI", label: "Tarjeta de Identidad" },
     { value: "CE", label: "Cedula de Extranjeria" },
-    { value: "PP", label: "Pasaporte" },
-    { value: "NIT", label: "NIT" },
-  ];
+    { value: "PS", label: "Pasaporte" },   // era PP, ahora PS
+    { value: "OT", label: "Otro" },        // era NIT, no existe en el modelo
+];
 
   return (
     <div className="min-h-screen bg-background flex">
