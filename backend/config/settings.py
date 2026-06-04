@@ -24,18 +24,22 @@ ALLOWED_HOSTS = ['*']
 
 from datetime import timedelta
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-    ),
-}
+
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
     'USER_ID_FIELD': 'user_id',
     'USER_ID_CLAIM': 'user_id',
+    'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
 }
 
+# Decirle a Django REST Framework que use tu autenticación JWT personalizada
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'users.authentication.CustomJWTAuthentication',
+    ),
+
+}
 # Application definition
 
 INSTALLED_APPS = [
@@ -142,3 +146,6 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
