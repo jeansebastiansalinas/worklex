@@ -187,3 +187,50 @@ class TestResultViewSet(viewsets.ViewSet):
         if error:
             return Response({'error': error}, status=status.HTTP_404_NOT_FOUND)
         return Response({'feedback': result.feedback})
+    
+import random
+from ..Models.modelsSENA import DigitalDictionary
+
+DISTRACTORS_POOL = ['gear', 'valve', 'pipe', 'bolt', 'wrench', 'lever', 'pump', 'cable', 'hose', 'filter', 'bearing', 'shaft']
+
+class QuizAPIView(APIView):
+    permission_classes = [permissions.AllowAny]
+
+    def get(self, request):
+        subject_id = request.query_params.get('subject', 'mecanica')
+        limit = int(request.query_params.get('limit', 10))
+
+        words = list(DigitalDictionary.objects.filter(subject_id=subject_id))
+
+        if len(words) < 1:
+            return Response({'error': 'No hay palabras disponibles'}, status=status.HTTP_400_BAD_REQUEST)
+
+        selected = random.sample(words, min(limit, len(words)))
+        real_words = [w.word_id for w in words]
+
+        questions = []
+        for i, word in enumerate(selected):
+            # Distractores: otras palabras reales + pool externo, sin repetir la correcta
+            real_distractors = [w for w in real_words if w != word.word_id]
+            extra = [w for w in DISTRACTORS_POOL if w not in real_words and w != word.word_id]
+            
+            all_distractors = real_distractors + extra
+            # Tomar exactamente 3, rellenando si hace falta
+            distractors = all_distractors[:3]
+
+            options = distractors + [word.word_id]
+            random.shuffle(options)
+
+            questions.append({
+                'id': i + 1,
+                'word_id': word.word_id,
+                'image': request.build_absolute_uri(f'/media/images/{word.image}'),
+                'audio': request.build_absolute_uri(f'/media/audio/{word.audio}'),
+                'definition': word.definition,
+                'options': options,
+                'correctAnswer': options.index(word.word_id),
+                'category': subject_id,
+                'difficulty': 'Easy',
+            })
+
+        return Response(questions)

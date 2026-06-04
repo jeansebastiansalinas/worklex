@@ -1,0 +1,2557 @@
+[
+  {
+    "model": "users.subject",
+    "pk": "mecanica",
+    "fields": {
+      "description": "Mecánica Industrial"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 1,
+    "fields": {
+      "word_id": "fluid",
+      "subject_id": "mecanica",
+      "definition": "A liquid used in mechanical systems",
+      "synonyms": "liquid, oil",
+      "audio": "fluid.mp3",
+      "video": null,
+      "image": "fluid.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 2,
+    "fields": {
+      "word_id": "frame",
+      "subject_id": "mecanica",
+      "definition": "The structural base of a machine or vehicle",
+      "synonyms": "structure, chassis",
+      "audio": "frame.mp3",
+      "video": null,
+      "image": "frame.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 3,
+    "fields": {
+      "word_id": "fuse",
+      "subject_id": "mecanica",
+      "definition": "A safety device that protects electrical circuits",
+      "synonyms": "circuit breaker, protector",
+      "audio": "fuse.mp3",
+      "video": null,
+      "image": "fuse.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 4,
+    "fields": {
+      "word_id": "accumulator",
+      "subject_id": "mecanica",
+      "definition": "Accumulator - Mechanical component",
+      "synonyms": "accumulator",
+      "audio": "accumulator.mp3",
+      "video": null,
+      "image": "accumulator.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 5,
+    "fields": {
+      "word_id": "actuating_lever",
+      "subject_id": "mecanica",
+      "definition": "Actuating Lever - Mechanical component",
+      "synonyms": "actuating lever",
+      "audio": "actuating_lever.mp3",
+      "video": null,
+      "image": "actuating_lever.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 6,
+    "fields": {
+      "word_id": "actuator",
+      "subject_id": "mecanica",
+      "definition": "Actuator - Mechanical component",
+      "synonyms": "actuator",
+      "audio": "actuator.mp3",
+      "video": null,
+      "image": "actuator.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 7,
+    "fields": {
+      "word_id": "aftercooler",
+      "subject_id": "mecanica",
+      "definition": "Aftercooler - Mechanical component",
+      "synonyms": "aftercooler",
+      "audio": "aftercooler.mp3",
+      "video": null,
+      "image": "aftercooler.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 8,
+    "fields": {
+      "word_id": "air_brake",
+      "subject_id": "mecanica",
+      "definition": "Air Brake - Mechanical component",
+      "synonyms": "air brake",
+      "audio": "air_brake.mp3",
+      "video": null,
+      "image": "air_brake.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 9,
+    "fields": {
+      "word_id": "air_cleaner",
+      "subject_id": "mecanica",
+      "definition": "Air Cleaner - Mechanical component",
+      "synonyms": "air cleaner",
+      "audio": "air_cleaner.mp3",
+      "video": null,
+      "image": "air_cleaner.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 10,
+    "fields": {
+      "word_id": "air_compressor",
+      "subject_id": "mecanica",
+      "definition": "Air Compressor - Mechanical component",
+      "synonyms": "air compressor",
+      "audio": "air_compressor.mp3",
+      "video": null,
+      "image": "air_compressor.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 11,
+    "fields": {
+      "word_id": "air_duct",
+      "subject_id": "mecanica",
+      "definition": "Air Duct - Mechanical component",
+      "synonyms": "air duct",
+      "audio": "air_duct.mp3",
+      "video": null,
+      "image": "air_duct.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 12,
+    "fields": {
+      "word_id": "air_filter",
+      "subject_id": "mecanica",
+      "definition": "Air Filter - Mechanical component",
+      "synonyms": "air filter",
+      "audio": "air_filter.mp3",
+      "video": null,
+      "image": "air_filter.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 13,
+    "fields": {
+      "word_id": "air_intake",
+      "subject_id": "mecanica",
+      "definition": "Air Intake - Mechanical component",
+      "synonyms": "air intake",
+      "audio": "air_intake.mp3",
+      "video": null,
+      "image": "air_intake.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 14,
+    "fields": {
+      "word_id": "alignment",
+      "subject_id": "mecanica",
+      "definition": "Alignment - Mechanical component",
+      "synonyms": "alignment",
+      "audio": "alignment.mp3",
+      "video": null,
+      "image": "alignment.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 15,
+    "fields": {
+      "word_id": "alternator",
+      "subject_id": "mecanica",
+      "definition": "Alternator - Mechanical component",
+      "synonyms": "alternator",
+      "audio": "alternator.mp3",
+      "video": null,
+      "image": "alternator.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 16,
+    "fields": {
+      "word_id": "amperage",
+      "subject_id": "mecanica",
+      "definition": "Amperage - Mechanical component",
+      "synonyms": "amperage",
+      "audio": "amperage.mp3",
+      "video": null,
+      "image": "amperage.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 17,
+    "fields": {
+      "word_id": "automatic_transmission",
+      "subject_id": "mecanica",
+      "definition": "Automatic Transmission - Mechanical component",
+      "synonyms": "automatic transmission",
+      "audio": "automatic_transmission.mp3",
+      "video": null,
+      "image": "automatic_transmission.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 18,
+    "fields": {
+      "word_id": "axle",
+      "subject_id": "mecanica",
+      "definition": "Axle - Mechanical component",
+      "synonyms": "axle",
+      "audio": "axle.mp3",
+      "video": null,
+      "image": "axle.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 19,
+    "fields": {
+      "word_id": "ball_joint",
+      "subject_id": "mecanica",
+      "definition": "Ball Joint - Mechanical component",
+      "synonyms": "ball joint",
+      "audio": "ball_joint.mp3",
+      "video": null,
+      "image": "ball_joint.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 20,
+    "fields": {
+      "word_id": "battery",
+      "subject_id": "mecanica",
+      "definition": "Battery - Mechanical component",
+      "synonyms": "battery",
+      "audio": "battery.mp3",
+      "video": null,
+      "image": "battery.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 21,
+    "fields": {
+      "word_id": "battery_terminal",
+      "subject_id": "mecanica",
+      "definition": "Battery Terminal - Mechanical component",
+      "synonyms": "battery terminal",
+      "audio": "battery_terminal.mp3",
+      "video": null,
+      "image": "battery_terminal.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 22,
+    "fields": {
+      "word_id": "bearings",
+      "subject_id": "mecanica",
+      "definition": "Bearings - Mechanical component",
+      "synonyms": "bearings",
+      "audio": "bearings.mp3",
+      "video": null,
+      "image": "bearings.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 23,
+    "fields": {
+      "word_id": "belt_drive",
+      "subject_id": "mecanica",
+      "definition": "Belt Drive - Mechanical component",
+      "synonyms": "belt drive",
+      "audio": "belt_drive.mp3",
+      "video": null,
+      "image": "belt_drive.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 24,
+    "fields": {
+      "word_id": "belt_tensioner",
+      "subject_id": "mecanica",
+      "definition": "Belt Tensioner - Mechanical component",
+      "synonyms": "belt tensioner",
+      "audio": "belt_tensioner.mp3",
+      "video": null,
+      "image": "belt_tensioner.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 25,
+    "fields": {
+      "word_id": "blower_motor",
+      "subject_id": "mecanica",
+      "definition": "Blower Motor - Mechanical component",
+      "synonyms": "blower motor",
+      "audio": "blower_motor.mp3",
+      "video": null,
+      "image": "blower_motor.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 26,
+    "fields": {
+      "word_id": "brake_booster",
+      "subject_id": "mecanica",
+      "definition": "Brake Booster - Mechanical component",
+      "synonyms": "brake booster",
+      "audio": "brake_booster.mp3",
+      "video": null,
+      "image": "brake_booster.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 27,
+    "fields": {
+      "word_id": "brake_drum",
+      "subject_id": "mecanica",
+      "definition": "Brake Drum - Mechanical component",
+      "synonyms": "brake drum",
+      "audio": "brake_drum.mp3",
+      "video": null,
+      "image": "brake_drum.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 28,
+    "fields": {
+      "word_id": "brake_pads",
+      "subject_id": "mecanica",
+      "definition": "Brake Pads - Mechanical component",
+      "synonyms": "brake pads",
+      "audio": "brake_pads.mp3",
+      "video": null,
+      "image": "brake_pads.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 29,
+    "fields": {
+      "word_id": "brake_shoe",
+      "subject_id": "mecanica",
+      "definition": "Brake Shoe - Mechanical component",
+      "synonyms": "brake shoe",
+      "audio": "brake_shoe.mp3",
+      "video": null,
+      "image": "brake_shoe.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 30,
+    "fields": {
+      "word_id": "breather",
+      "subject_id": "mecanica",
+      "definition": "Breather - Mechanical component",
+      "synonyms": "breather",
+      "audio": "breather.mp3",
+      "video": null,
+      "image": "breather.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 31,
+    "fields": {
+      "word_id": "bushing",
+      "subject_id": "mecanica",
+      "definition": "Bushing - Mechanical component",
+      "synonyms": "bushing",
+      "audio": "bushing.mp3",
+      "video": null,
+      "image": "bushing.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 32,
+    "fields": {
+      "word_id": "cab",
+      "subject_id": "mecanica",
+      "definition": "Cab - Mechanical component",
+      "synonyms": "cab",
+      "audio": "cab.mp3",
+      "video": null,
+      "image": "cab.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 33,
+    "fields": {
+      "word_id": "cabin",
+      "subject_id": "mecanica",
+      "definition": "Cabin - Mechanical component",
+      "synonyms": "cabin",
+      "audio": "cabin.mp3",
+      "video": null,
+      "image": "cabin.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 34,
+    "fields": {
+      "word_id": "caliper",
+      "subject_id": "mecanica",
+      "definition": "Caliper - Mechanical component",
+      "synonyms": "caliper",
+      "audio": "caliper.mp3",
+      "video": null,
+      "image": "caliper.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 35,
+    "fields": {
+      "word_id": "camber",
+      "subject_id": "mecanica",
+      "definition": "Camber - Mechanical component",
+      "synonyms": "camber",
+      "audio": "camber.mp3",
+      "video": null,
+      "image": "camber.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 36,
+    "fields": {
+      "word_id": "camshaft",
+      "subject_id": "mecanica",
+      "definition": "Camshaft - Mechanical component",
+      "synonyms": "camshaft",
+      "audio": "camshaft.mp3",
+      "video": null,
+      "image": "camshaft.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 37,
+    "fields": {
+      "word_id": "chain_hoist",
+      "subject_id": "mecanica",
+      "definition": "Chain Hoist - Mechanical component",
+      "synonyms": "chain hoist",
+      "audio": "chain_hoist.mp3",
+      "video": null,
+      "image": "chain_hoist.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 38,
+    "fields": {
+      "word_id": "charge_air_cooler",
+      "subject_id": "mecanica",
+      "definition": "Charge Air Cooler - Mechanical component",
+      "synonyms": "charge air cooler",
+      "audio": "charge_air_cooler.mp3",
+      "video": null,
+      "image": "charge_air_cooler.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 39,
+    "fields": {
+      "word_id": "chassis",
+      "subject_id": "mecanica",
+      "definition": "Chassis - Mechanical component",
+      "synonyms": "chassis",
+      "audio": "chassis.mp3",
+      "video": null,
+      "image": "chassis.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 40,
+    "fields": {
+      "word_id": "check_valve",
+      "subject_id": "mecanica",
+      "definition": "Check Valve - Mechanical component",
+      "synonyms": "check valve",
+      "audio": "check_valve.mp3",
+      "video": null,
+      "image": "check_valve.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 41,
+    "fields": {
+      "word_id": "circuit",
+      "subject_id": "mecanica",
+      "definition": "Circuit - Mechanical component",
+      "synonyms": "circuit",
+      "audio": "circuit.mp3",
+      "video": null,
+      "image": "circuit.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 42,
+    "fields": {
+      "word_id": "clutch",
+      "subject_id": "mecanica",
+      "definition": "Clutch - Mechanical component",
+      "synonyms": "clutch",
+      "audio": "clutch.mp3",
+      "video": null,
+      "image": "clutch.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 43,
+    "fields": {
+      "word_id": "clutch_plate",
+      "subject_id": "mecanica",
+      "definition": "Clutch Plate - Mechanical component",
+      "synonyms": "clutch plate",
+      "audio": "clutch_plate.mp3",
+      "video": null,
+      "image": "clutch_plate.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 44,
+    "fields": {
+      "word_id": "coil_spring",
+      "subject_id": "mecanica",
+      "definition": "Coil Spring - Mechanical component",
+      "synonyms": "coil spring",
+      "audio": "coil_spring.mp3",
+      "video": null,
+      "image": "coil_spring.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 45,
+    "fields": {
+      "word_id": "connecting_rod",
+      "subject_id": "mecanica",
+      "definition": "Connecting Rod - Mechanical component",
+      "synonyms": "connecting rod",
+      "audio": "connecting_rod.mp3",
+      "video": null,
+      "image": "connecting_rod.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 46,
+    "fields": {
+      "word_id": "control_arm",
+      "subject_id": "mecanica",
+      "definition": "Control Arm - Mechanical component",
+      "synonyms": "control arm",
+      "audio": "control_arm.mp3",
+      "video": null,
+      "image": "control_arm.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 47,
+    "fields": {
+      "word_id": "control_joystick",
+      "subject_id": "mecanica",
+      "definition": "Control Joystick - Mechanical component",
+      "synonyms": "control joystick",
+      "audio": "control_joystick.mp3",
+      "video": null,
+      "image": "control_joystick.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 48,
+    "fields": {
+      "word_id": "control_panel",
+      "subject_id": "mecanica",
+      "definition": "Control Panel - Mechanical component",
+      "synonyms": "control panel",
+      "audio": "control_panel.mp3",
+      "video": null,
+      "image": "control_panel.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 49,
+    "fields": {
+      "word_id": "control_valve",
+      "subject_id": "mecanica",
+      "definition": "Control Valve - Mechanical component",
+      "synonyms": "control valve",
+      "audio": "control_valve.mp3",
+      "video": null,
+      "image": "control_valve.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 50,
+    "fields": {
+      "word_id": "coolant",
+      "subject_id": "mecanica",
+      "definition": "Coolant - Mechanical component",
+      "synonyms": "coolant",
+      "audio": "coolant.mp3",
+      "video": null,
+      "image": "coolant.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 51,
+    "fields": {
+      "word_id": "coolant_hose",
+      "subject_id": "mecanica",
+      "definition": "Coolant Hose - Mechanical component",
+      "synonyms": "coolant hose",
+      "audio": "coolant_hose.mp3",
+      "video": null,
+      "image": "coolant_hose.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 52,
+    "fields": {
+      "word_id": "cooling_fan",
+      "subject_id": "mecanica",
+      "definition": "Cooling Fan - Mechanical component",
+      "synonyms": "cooling fan",
+      "audio": "cooling_fan.mp3",
+      "video": null,
+      "image": "cooling_fan.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 53,
+    "fields": {
+      "word_id": "counterweight",
+      "subject_id": "mecanica",
+      "definition": "Counterweight - Mechanical component",
+      "synonyms": "counterweight",
+      "audio": "counterweight.mp3",
+      "video": null,
+      "image": "counterweight.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 54,
+    "fields": {
+      "word_id": "crank_pulley",
+      "subject_id": "mecanica",
+      "definition": "Crank Pulley - Mechanical component",
+      "synonyms": "crank pulley",
+      "audio": "crank_pulley.mp3",
+      "video": null,
+      "image": "crank_pulley.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 55,
+    "fields": {
+      "word_id": "crankcase",
+      "subject_id": "mecanica",
+      "definition": "Crankcase - Mechanical component",
+      "synonyms": "crankcase",
+      "audio": "crankcase.mp3",
+      "video": null,
+      "image": "crankcase.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 56,
+    "fields": {
+      "word_id": "crankshaft",
+      "subject_id": "mecanica",
+      "definition": "Crankshaft - Mechanical component",
+      "synonyms": "crankshaft",
+      "audio": "crankshaft.mp3",
+      "video": null,
+      "image": "crankshaft.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 57,
+    "fields": {
+      "word_id": "cv_joint",
+      "subject_id": "mecanica",
+      "definition": "CV Joint - Mechanical component",
+      "synonyms": "cv joint",
+      "audio": "cv_joint.mp3",
+      "video": null,
+      "image": "cv_joint.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 58,
+    "fields": {
+      "word_id": "cylinder",
+      "subject_id": "mecanica",
+      "definition": "Cylinder - Mechanical component",
+      "synonyms": "cylinder",
+      "audio": "cylinder.mp3",
+      "video": null,
+      "image": "cylinder.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 59,
+    "fields": {
+      "word_id": "cylinder_head",
+      "subject_id": "mecanica",
+      "definition": "Cylinder Head - Mechanical component",
+      "synonyms": "cylinder head",
+      "audio": "cylinder_head.mp3",
+      "video": null,
+      "image": "cylinder_head.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 118,
+    "fields": {
+      "word_id": "lug_nut",
+      "subject_id": "mecanica",
+      "definition": "Lug Nut - Mechanical component",
+      "synonyms": "lug nut",
+      "audio": "lug_nut.mp3",
+      "video": null,
+      "image": "lug_nut.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 60,
+    "fields": {
+      "word_id": "data_link_connector",
+      "subject_id": "mecanica",
+      "definition": "Data Link Connector - Mechanical component",
+      "synonyms": "data link connector",
+      "audio": "data_link_connector.mp3",
+      "video": null,
+      "image": "data_link_connector.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 61,
+    "fields": {
+      "word_id": "desiccant",
+      "subject_id": "mecanica",
+      "definition": "Desiccant - Mechanical component",
+      "synonyms": "desiccant",
+      "audio": "desiccant.mp3",
+      "video": null,
+      "image": "desiccant.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 62,
+    "fields": {
+      "word_id": "diaphgram",
+      "subject_id": "mecanica",
+      "definition": "Diaphgram - Mechanical component",
+      "synonyms": "diaphgram",
+      "audio": "diaphgram.mp3",
+      "video": null,
+      "image": "diaphgram.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 63,
+    "fields": {
+      "word_id": "differential",
+      "subject_id": "mecanica",
+      "definition": "Differential - Mechanical component",
+      "synonyms": "differential",
+      "audio": "differential.mp3",
+      "video": null,
+      "image": "differential.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 64,
+    "fields": {
+      "word_id": "differential_lock",
+      "subject_id": "mecanica",
+      "definition": "Differential Lock - Mechanical component",
+      "synonyms": "differential lock",
+      "audio": "differential_lock.mp3",
+      "video": null,
+      "image": "differential_lock.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 65,
+    "fields": {
+      "word_id": "diode",
+      "subject_id": "mecanica",
+      "definition": "Diode - Mechanical component",
+      "synonyms": "diode",
+      "audio": "diode.mp3",
+      "video": null,
+      "image": "diode.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 66,
+    "fields": {
+      "word_id": "directional_valve",
+      "subject_id": "mecanica",
+      "definition": "Directional Valve - Mechanical component",
+      "synonyms": "directional valve",
+      "audio": "directional_valve.mp3",
+      "video": null,
+      "image": "directional_valve.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 67,
+    "fields": {
+      "word_id": "disc_brake",
+      "subject_id": "mecanica",
+      "definition": "Disc Brake - Mechanical component",
+      "synonyms": "disc brake",
+      "audio": "disc_brake.mp3",
+      "video": null,
+      "image": "disc_brake.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 68,
+    "fields": {
+      "word_id": "drive_shaft",
+      "subject_id": "mecanica",
+      "definition": "Drive Shaft - Mechanical component",
+      "synonyms": "drive shaft",
+      "audio": "drive_shaft.mp3",
+      "video": null,
+      "image": "drive_shaft.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 69,
+    "fields": {
+      "word_id": "electrical_connector",
+      "subject_id": "mecanica",
+      "definition": "Electrical Connector - Mechanical component",
+      "synonyms": "electrical connector",
+      "audio": "electrical_connector.mp3",
+      "video": null,
+      "image": "electrical_connector.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 70,
+    "fields": {
+      "word_id": "engine",
+      "subject_id": "mecanica",
+      "definition": "Engine - Mechanical component",
+      "synonyms": "engine",
+      "audio": "engine.mp3",
+      "video": null,
+      "image": "engine.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 71,
+    "fields": {
+      "word_id": "engine_mount",
+      "subject_id": "mecanica",
+      "definition": "Engine Mount - Mechanical component",
+      "synonyms": "engine mount",
+      "audio": "engine_mount.mp3",
+      "video": null,
+      "image": "engine_mount.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 72,
+    "fields": {
+      "word_id": "excavator_arm",
+      "subject_id": "mecanica",
+      "definition": "Excavator Arm - Mechanical component",
+      "synonyms": "excavator arm",
+      "audio": "excavator_arm.mp3",
+      "video": null,
+      "image": "excavator_arm.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 73,
+    "fields": {
+      "word_id": "exhaust_manifold",
+      "subject_id": "mecanica",
+      "definition": "Exhaust Manifold - Mechanical component",
+      "synonyms": "exhaust manifold",
+      "audio": "exhaust_manifold.mp3",
+      "video": null,
+      "image": "exhaust_manifold.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 74,
+    "fields": {
+      "word_id": "expansion_valve",
+      "subject_id": "mecanica",
+      "definition": "Expansion Valve - Mechanical component",
+      "synonyms": "expansion valve",
+      "audio": "expansion_valve.mp3",
+      "video": null,
+      "image": "expansion_valve.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 75,
+    "fields": {
+      "word_id": "fan_blade",
+      "subject_id": "mecanica",
+      "definition": "Fan Blade - Mechanical component",
+      "synonyms": "fan blade",
+      "audio": "fan_blade.mp3",
+      "video": null,
+      "image": "fan_blade.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 76,
+    "fields": {
+      "word_id": "fan_clutch",
+      "subject_id": "mecanica",
+      "definition": "Fan Clutch - Mechanical component",
+      "synonyms": "fan clutch",
+      "audio": "fan_clutch.mp3",
+      "video": null,
+      "image": "fan_clutch.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 77,
+    "fields": {
+      "word_id": "fifth_wheel",
+      "subject_id": "mecanica",
+      "definition": "Fifth Wheel - Mechanical component",
+      "synonyms": "fifth wheel",
+      "audio": "fifth_wheel.mp3",
+      "video": null,
+      "image": "fifth_wheel.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 78,
+    "fields": {
+      "word_id": "filter",
+      "subject_id": "mecanica",
+      "definition": "Filter - Mechanical component",
+      "synonyms": "filter",
+      "audio": "filter.mp3",
+      "video": null,
+      "image": "filter.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 79,
+    "fields": {
+      "word_id": "flow_control_valve",
+      "subject_id": "mecanica",
+      "definition": "Flow Control Valve - Mechanical component",
+      "synonyms": "flow control valve",
+      "audio": "flow_control_valve.mp3",
+      "video": null,
+      "image": "flow_control_valve.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 80,
+    "fields": {
+      "word_id": "flywheel",
+      "subject_id": "mecanica",
+      "definition": "Flywheel - Mechanical component",
+      "synonyms": "flywheel",
+      "audio": "flywheel.mp3",
+      "video": null,
+      "image": "flywheel.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 81,
+    "fields": {
+      "word_id": "fuel_injector",
+      "subject_id": "mecanica",
+      "definition": "Fuel Injector - Mechanical component",
+      "synonyms": "fuel injector",
+      "audio": "fuel_injector.mp3",
+      "video": null,
+      "image": "fuel_injector.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 82,
+    "fields": {
+      "word_id": "fuel_line",
+      "subject_id": "mecanica",
+      "definition": "Fuel Line - Mechanical component",
+      "synonyms": "fuel line",
+      "audio": "fuel_line.mp3",
+      "video": null,
+      "image": "fuel_line.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 83,
+    "fields": {
+      "word_id": "fuel_nozzle",
+      "subject_id": "mecanica",
+      "definition": "Fuel Nozzle - Mechanical component",
+      "synonyms": "fuel nozzle",
+      "audio": "fuel_nozzle.mp3",
+      "video": null,
+      "image": "fuel_nozzle.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 84,
+    "fields": {
+      "word_id": "fuel_tank_cap",
+      "subject_id": "mecanica",
+      "definition": "Fuel Tank Cap - Mechanical component",
+      "synonyms": "fuel tank cap",
+      "audio": "fuel_tank_cap.mp3",
+      "video": null,
+      "image": "fuel_tank_cap.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 85,
+    "fields": {
+      "word_id": "gasket",
+      "subject_id": "mecanica",
+      "definition": "Gasket - Mechanical component",
+      "synonyms": "gasket",
+      "audio": "gasket.mp3",
+      "video": null,
+      "image": "gasket.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 86,
+    "fields": {
+      "word_id": "gear_box",
+      "subject_id": "mecanica",
+      "definition": "Gear Box - Mechanical component",
+      "synonyms": "gear box",
+      "audio": "gear_box.mp3",
+      "video": null,
+      "image": "gear_box.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 87,
+    "fields": {
+      "word_id": "glow_plug",
+      "subject_id": "mecanica",
+      "definition": "Glow Plug - Mechanical component",
+      "synonyms": "glow plug",
+      "audio": "glow_plug.mp3",
+      "video": null,
+      "image": "glow_plug.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 88,
+    "fields": {
+      "word_id": "governor",
+      "subject_id": "mecanica",
+      "definition": "Governor - Mechanical component",
+      "synonyms": "governor",
+      "audio": "governor.mp3",
+      "video": null,
+      "image": "governor.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 89,
+    "fields": {
+      "word_id": "grease_gun",
+      "subject_id": "mecanica",
+      "definition": "Grease Gun - Mechanical component",
+      "synonyms": "grease gun",
+      "audio": "grease_gun.mp3",
+      "video": null,
+      "image": "grease_gun.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 90,
+    "fields": {
+      "word_id": "ground",
+      "subject_id": "mecanica",
+      "definition": "Ground - Mechanical component",
+      "synonyms": "ground",
+      "audio": "ground.mp3",
+      "video": null,
+      "image": "ground.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 91,
+    "fields": {
+      "word_id": "handrail",
+      "subject_id": "mecanica",
+      "definition": "Handrail - Mechanical component",
+      "synonyms": "handrail",
+      "audio": "handrail.mp3",
+      "video": null,
+      "image": "handrail.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 92,
+    "fields": {
+      "word_id": "harness",
+      "subject_id": "mecanica",
+      "definition": "Harness - Mechanical component",
+      "synonyms": "harness",
+      "audio": "harness.mp3",
+      "video": null,
+      "image": "harness.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 93,
+    "fields": {
+      "word_id": "head_shield",
+      "subject_id": "mecanica",
+      "definition": "Head Shield - Mechanical component",
+      "synonyms": "head shield",
+      "audio": "head_shield.mp3",
+      "video": null,
+      "image": "head_shield.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 94,
+    "fields": {
+      "word_id": "hose",
+      "subject_id": "mecanica",
+      "definition": "Hose - Mechanical component",
+      "synonyms": "hose",
+      "audio": "hose.mp3",
+      "video": null,
+      "image": "hose.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 95,
+    "fields": {
+      "word_id": "housing",
+      "subject_id": "mecanica",
+      "definition": "Housing - Mechanical component",
+      "synonyms": "housing",
+      "audio": "housing.mp3",
+      "video": null,
+      "image": "housing.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 96,
+    "fields": {
+      "word_id": "hub",
+      "subject_id": "mecanica",
+      "definition": "Hub - Mechanical component",
+      "synonyms": "hub",
+      "audio": "hub.mp3",
+      "video": null,
+      "image": "hub.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 97,
+    "fields": {
+      "word_id": "hydraulic_circuit",
+      "subject_id": "mecanica",
+      "definition": "Hydraulic Circuit - Mechanical component",
+      "synonyms": "hydraulic circuit",
+      "audio": "hydraulic_circuit.mp3",
+      "video": null,
+      "image": "hydraulic_circuit.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 98,
+    "fields": {
+      "word_id": "hydraulic_cylinder",
+      "subject_id": "mecanica",
+      "definition": "Hydraulic Cylinder - Mechanical component",
+      "synonyms": "hydraulic cylinder",
+      "audio": "hydraulic_cylinder.mp3",
+      "video": null,
+      "image": "hydraulic_cylinder.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 99,
+    "fields": {
+      "word_id": "hydraulic_hose_fitting",
+      "subject_id": "mecanica",
+      "definition": "Hydraulic Hose Fitting - Mechanical component",
+      "synonyms": "hydraulic hose fitting",
+      "audio": "hydraulic_hose_fitting.mp3",
+      "video": null,
+      "image": "hydraulic_hose_fitting.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 100,
+    "fields": {
+      "word_id": "hydraulic_pump",
+      "subject_id": "mecanica",
+      "definition": "Hydraulic Pump - Mechanical component",
+      "synonyms": "hydraulic pump",
+      "audio": "hydraulic_pump.mp3",
+      "video": null,
+      "image": "hydraulic_pump.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 101,
+    "fields": {
+      "word_id": "hydraulic_seal_kit",
+      "subject_id": "mecanica",
+      "definition": "Hydraulic Seal Kit - Mechanical component",
+      "synonyms": "hydraulic seal kit",
+      "audio": "hydraulic_seal_kit.mp3",
+      "video": null,
+      "image": "hydraulic_seal_kit.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 102,
+    "fields": {
+      "word_id": "hydraulic_system",
+      "subject_id": "mecanica",
+      "definition": "Hydraulic System - Mechanical component",
+      "synonyms": "hydraulic system",
+      "audio": "hydraulic_system.mp3",
+      "video": null,
+      "image": "hydraulic_system.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 103,
+    "fields": {
+      "word_id": "hydraulic_tank",
+      "subject_id": "mecanica",
+      "definition": "Hydraulic Tank - Mechanical component",
+      "synonyms": "hydraulic tank",
+      "audio": "hydraulic_tank.mp3",
+      "video": null,
+      "image": "hydraulic_tank.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 104,
+    "fields": {
+      "word_id": "hydrometer",
+      "subject_id": "mecanica",
+      "definition": "Hydrometer - Mechanical component",
+      "synonyms": "hydrometer",
+      "audio": "hydrometer.mp3",
+      "video": null,
+      "image": "hydrometer.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 105,
+    "fields": {
+      "word_id": "idler",
+      "subject_id": "mecanica",
+      "definition": "Idler - Mechanical component",
+      "synonyms": "idler",
+      "audio": "idler.mp3",
+      "video": null,
+      "image": "idler.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 106,
+    "fields": {
+      "word_id": "idler_arm",
+      "subject_id": "mecanica",
+      "definition": "Idler Arm - Mechanical component",
+      "synonyms": "idler arm",
+      "audio": "idler_arm.mp3",
+      "video": null,
+      "image": "idler_arm.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 107,
+    "fields": {
+      "word_id": "ignition_key",
+      "subject_id": "mecanica",
+      "definition": "Ignition Key - Mechanical component",
+      "synonyms": "ignition key",
+      "audio": "ignition_key.mp3",
+      "video": null,
+      "image": "ignition_key.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 108,
+    "fields": {
+      "word_id": "ignition_switch",
+      "subject_id": "mecanica",
+      "definition": "Ignition Switch - Mechanical component",
+      "synonyms": "ignition switch",
+      "audio": "ignition_switch.mp3",
+      "video": null,
+      "image": "ignition_switch.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 109,
+    "fields": {
+      "word_id": "input_shaft",
+      "subject_id": "mecanica",
+      "definition": "Input Shaft - Mechanical component",
+      "synonyms": "input shaft",
+      "audio": "input_shaft.mp3",
+      "video": null,
+      "image": "input_shaft.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 110,
+    "fields": {
+      "word_id": "intake_mainfold",
+      "subject_id": "mecanica",
+      "definition": "Intake Manifold - Mechanical component",
+      "synonyms": "intake manifold",
+      "audio": "intake_mainfold.mp3",
+      "video": null,
+      "image": "intake_mainfold.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 111,
+    "fields": {
+      "word_id": "intercooler",
+      "subject_id": "mecanica",
+      "definition": "Intercooler - Mechanical component",
+      "synonyms": "intercooler",
+      "audio": "intercooler.mp3",
+      "video": null,
+      "image": "intercooler.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 112,
+    "fields": {
+      "word_id": "jack_stand",
+      "subject_id": "mecanica",
+      "definition": "Jack Stand - Mechanical component",
+      "synonyms": "jack stand",
+      "audio": "jack_stand.mp3",
+      "video": null,
+      "image": "jack_stand.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 113,
+    "fields": {
+      "word_id": "knuckle",
+      "subject_id": "mecanica",
+      "definition": "Knuckle - Mechanical component",
+      "synonyms": "knuckle",
+      "audio": "knuckle.mp3",
+      "video": null,
+      "image": "knuckle.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 114,
+    "fields": {
+      "word_id": "leaf_spring",
+      "subject_id": "mecanica",
+      "definition": "Leaf Spring - Mechanical component",
+      "synonyms": "leaf spring",
+      "audio": "leaf_spring.mp3",
+      "video": null,
+      "image": "leaf_spring.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 115,
+    "fields": {
+      "word_id": "lever",
+      "subject_id": "mecanica",
+      "definition": "Lever - Mechanical component",
+      "synonyms": "lever",
+      "audio": "lever.mp3",
+      "video": null,
+      "image": "lever.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 116,
+    "fields": {
+      "word_id": "liner",
+      "subject_id": "mecanica",
+      "definition": "Liner - Mechanical component",
+      "synonyms": "liner",
+      "audio": "liner.mp3",
+      "video": null,
+      "image": "liner.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 117,
+    "fields": {
+      "word_id": "linkage",
+      "subject_id": "mecanica",
+      "definition": "Linkage - Mechanical component",
+      "synonyms": "linkage",
+      "audio": "linkage.mp3",
+      "video": null,
+      "image": "linkage.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 119,
+    "fields": {
+      "word_id": "main_shaft",
+      "subject_id": "mecanica",
+      "definition": "Main Shaft - Mechanical component",
+      "synonyms": "main shaft",
+      "audio": "main_shaft.mp3",
+      "video": null,
+      "image": "main_shaft.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 120,
+    "fields": {
+      "word_id": "master_cylinder",
+      "subject_id": "mecanica",
+      "definition": "Master Cylinder - Mechanical component",
+      "synonyms": "master cylinder",
+      "audio": "master_cylinder.mp3",
+      "video": null,
+      "image": "master_cylinder.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 121,
+    "fields": {
+      "word_id": "mirror",
+      "subject_id": "mecanica",
+      "definition": "Mirror - Mechanical component",
+      "synonyms": "mirror",
+      "audio": "mirror.mp3",
+      "video": null,
+      "image": "mirror.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 122,
+    "fields": {
+      "word_id": "multimeter",
+      "subject_id": "mecanica",
+      "definition": "Multimeter - Mechanical component",
+      "synonyms": "multimeter",
+      "audio": "multimeter.mp3",
+      "video": null,
+      "image": "multimeter.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 123,
+    "fields": {
+      "word_id": "o_ring",
+      "subject_id": "mecanica",
+      "definition": "O-Ring - Mechanical component",
+      "synonyms": "o-ring",
+      "audio": "o_ring.mp3",
+      "video": null,
+      "image": "o_ring.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 124,
+    "fields": {
+      "word_id": "oil_cooler",
+      "subject_id": "mecanica",
+      "definition": "Oil Cooler - Mechanical component",
+      "synonyms": "oil cooler",
+      "audio": "oil_cooler.mp3",
+      "video": null,
+      "image": "oil_cooler.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 125,
+    "fields": {
+      "word_id": "oil_dipstick_tube",
+      "subject_id": "mecanica",
+      "definition": "Oil Dipstick Tube - Mechanical component",
+      "synonyms": "oil dipstick tube",
+      "audio": "oil_dipstick_tube.mp3",
+      "video": null,
+      "image": "oil_dipstick_tube.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 126,
+    "fields": {
+      "word_id": "oil_filter",
+      "subject_id": "mecanica",
+      "definition": "Oil Filter - Mechanical component",
+      "synonyms": "oil filter",
+      "audio": "oil_filter.mp3",
+      "video": null,
+      "image": "oil_filter.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 127,
+    "fields": {
+      "word_id": "oil_pan",
+      "subject_id": "mecanica",
+      "definition": "Oil Pan - Mechanical component",
+      "synonyms": "oil pan",
+      "audio": "oil_pan.mp3",
+      "video": null,
+      "image": "oil_pan.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 128,
+    "fields": {
+      "word_id": "oil_pump",
+      "subject_id": "mecanica",
+      "definition": "Oil Pump - Mechanical component",
+      "synonyms": "oil pump",
+      "audio": "oil_pump.mp3",
+      "video": null,
+      "image": "oil_pump.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 129,
+    "fields": {
+      "word_id": "operator_seat",
+      "subject_id": "mecanica",
+      "definition": "Operator Seat - Mechanical component",
+      "synonyms": "operator seat",
+      "audio": "operator_seat.mp3",
+      "video": null,
+      "image": "operator_seat.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 130,
+    "fields": {
+      "word_id": "orifice",
+      "subject_id": "mecanica",
+      "definition": "Orifice - Mechanical component",
+      "synonyms": "orifice",
+      "audio": "orifice.mp3",
+      "video": null,
+      "image": "orifice.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 131,
+    "fields": {
+      "word_id": "output_shaft",
+      "subject_id": "mecanica",
+      "definition": "Output Shaft - Mechanical component",
+      "synonyms": "output shaft",
+      "audio": "output_shaft.mp3",
+      "video": null,
+      "image": "output_shaft.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 132,
+    "fields": {
+      "word_id": "overdrive",
+      "subject_id": "mecanica",
+      "definition": "Overdrive - Mechanical component",
+      "synonyms": "overdrive",
+      "audio": "overdrive.mp3",
+      "video": null,
+      "image": "overdrive.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 133,
+    "fields": {
+      "word_id": "pcv_system",
+      "subject_id": "mecanica",
+      "definition": "PCV System - Mechanical component",
+      "synonyms": "pcv system",
+      "audio": "pcv_system.mp3",
+      "video": null,
+      "image": "pcv_system.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 134,
+    "fields": {
+      "word_id": "pinion",
+      "subject_id": "mecanica",
+      "definition": "Pinion - Mechanical component",
+      "synonyms": "pinion",
+      "audio": "pinion.mp3",
+      "video": null,
+      "image": "pinion.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 135,
+    "fields": {
+      "word_id": "piston",
+      "subject_id": "mecanica",
+      "definition": "Piston - Mechanical component",
+      "synonyms": "piston",
+      "audio": "piston.mp3",
+      "video": null,
+      "image": "piston.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 136,
+    "fields": {
+      "word_id": "piston_rod",
+      "subject_id": "mecanica",
+      "definition": "Piston Rod - Mechanical component",
+      "synonyms": "piston rod",
+      "audio": "piston_rod.mp3",
+      "video": null,
+      "image": "piston_rod.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 137,
+    "fields": {
+      "word_id": "pitman_arm",
+      "subject_id": "mecanica",
+      "definition": "Pitman Arm - Mechanical component",
+      "synonyms": "pitman arm",
+      "audio": "pitman_arm.mp3",
+      "video": null,
+      "image": "pitman_arm.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 138,
+    "fields": {
+      "word_id": "power_steering_pump",
+      "subject_id": "mecanica",
+      "definition": "Power Steering Pump - Mechanical component",
+      "synonyms": "power steering pump",
+      "audio": "power_steering_pump.mp3",
+      "video": null,
+      "image": "power_steering_pump.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 139,
+    "fields": {
+      "word_id": "power_take_off_pto",
+      "subject_id": "mecanica",
+      "definition": "Power Take Off (PTO) - Mechanical component",
+      "synonyms": "power take off (pto)",
+      "audio": "power_take_off_pto.mp3",
+      "video": null,
+      "image": "power_take_off_pto.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 140,
+    "fields": {
+      "word_id": "powertrain",
+      "subject_id": "mecanica",
+      "definition": "PowerTrain - Mechanical component",
+      "synonyms": "powertrain",
+      "audio": "powertrain.mp3",
+      "video": null,
+      "image": "powertrain.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 141,
+    "fields": {
+      "word_id": "pressure_plate",
+      "subject_id": "mecanica",
+      "definition": "Pressure Plate - Mechanical component",
+      "synonyms": "pressure plate",
+      "audio": "pressure_plate.mp3",
+      "video": null,
+      "image": "pressure_plate.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 142,
+    "fields": {
+      "word_id": "pressure_regulator",
+      "subject_id": "mecanica",
+      "definition": "Pressure Regulator - Mechanical component",
+      "synonyms": "pressure regulator",
+      "audio": "pressure_regulator.mp3",
+      "video": null,
+      "image": "pressure_regulator.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 143,
+    "fields": {
+      "word_id": "propeller_shaft",
+      "subject_id": "mecanica",
+      "definition": "Propeller Shaft - Mechanical component",
+      "synonyms": "propeller shaft",
+      "audio": "propeller_shaft.mp3",
+      "video": null,
+      "image": "propeller_shaft.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 144,
+    "fields": {
+      "word_id": "push_rod",
+      "subject_id": "mecanica",
+      "definition": "Push Rod - Mechanical component",
+      "synonyms": "push rod",
+      "audio": "push_rod.mp3",
+      "video": null,
+      "image": "push_rod.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 145,
+    "fields": {
+      "word_id": "radiator",
+      "subject_id": "mecanica",
+      "definition": "Radiator - Mechanical component",
+      "synonyms": "radiator",
+      "audio": "radiator.mp3",
+      "video": null,
+      "image": "radiator.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 146,
+    "fields": {
+      "word_id": "radiator_cap",
+      "subject_id": "mecanica",
+      "definition": "Radiator Cap - Mechanical component",
+      "synonyms": "radiator cap",
+      "audio": "radiator_cap.mp3",
+      "video": null,
+      "image": "radiator_cap.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 147,
+    "fields": {
+      "word_id": "relay",
+      "subject_id": "mecanica",
+      "definition": "Relay - Mechanical component",
+      "synonyms": "relay",
+      "audio": "relay.mp3",
+      "video": null,
+      "image": "relay.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 148,
+    "fields": {
+      "word_id": "release_bearing",
+      "subject_id": "mecanica",
+      "definition": "Release Bearing - Mechanical component",
+      "synonyms": "release bearing",
+      "audio": "release_bearing.mp3",
+      "video": null,
+      "image": "release_bearing.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 149,
+    "fields": {
+      "word_id": "rim",
+      "subject_id": "mecanica",
+      "definition": "RIM - Mechanical component",
+      "synonyms": "rim",
+      "audio": "rim.mp3",
+      "video": null,
+      "image": "rim.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 150,
+    "fields": {
+      "word_id": "rim_flange",
+      "subject_id": "mecanica",
+      "definition": "Rim Flange - Mechanical component",
+      "synonyms": "rim flange",
+      "audio": "rim_flange.mp3",
+      "video": null,
+      "image": "rim_flange.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 151,
+    "fields": {
+      "word_id": "ring_and_pinion",
+      "subject_id": "mecanica",
+      "definition": "Ring and Pinion - Mechanical component",
+      "synonyms": "ring and pinion",
+      "audio": "ring_and_pinion.mp3",
+      "video": null,
+      "image": "ring_and_pinion.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 152,
+    "fields": {
+      "word_id": "rocker_arm",
+      "subject_id": "mecanica",
+      "definition": "Rocker Arm - Mechanical component",
+      "synonyms": "rocker arm",
+      "audio": "rocker_arm.mp3",
+      "video": null,
+      "image": "rocker_arm.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 153,
+    "fields": {
+      "word_id": "roller_frame",
+      "subject_id": "mecanica",
+      "definition": "Roller Frame - Mechanical component",
+      "synonyms": "roller frame",
+      "audio": "roller_frame.mp3",
+      "video": null,
+      "image": "roller_frame.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 154,
+    "fields": {
+      "word_id": "safety_belt",
+      "subject_id": "mecanica",
+      "definition": "Safety Belt - Mechanical component",
+      "synonyms": "safety belt",
+      "audio": "safety_belt.mp3",
+      "video": null,
+      "image": "safety_belt.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 155,
+    "fields": {
+      "word_id": "scan_tool",
+      "subject_id": "mecanica",
+      "definition": "Scan Tool - Mechanical component",
+      "synonyms": "scan tool",
+      "audio": "scan_tool.mp3",
+      "video": null,
+      "image": "scan_tool.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 156,
+    "fields": {
+      "word_id": "seal",
+      "subject_id": "mecanica",
+      "definition": "Seal - Mechanical component",
+      "synonyms": "seal",
+      "audio": "seal.mp3",
+      "video": null,
+      "image": "seal.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 157,
+    "fields": {
+      "word_id": "sensor",
+      "subject_id": "mecanica",
+      "definition": "Sensor - Mechanical component",
+      "synonyms": "sensor",
+      "audio": "sensor.mp3",
+      "video": null,
+      "image": "sensor.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 158,
+    "fields": {
+      "word_id": "shift_linkage",
+      "subject_id": "mecanica",
+      "definition": "Shift Linkage - Mechanical component",
+      "synonyms": "shift linkage",
+      "audio": "shift_linkage.mp3",
+      "video": null,
+      "image": "shift_linkage.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 159,
+    "fields": {
+      "word_id": "solenoid",
+      "subject_id": "mecanica",
+      "definition": "Solenoid - Mechanical component",
+      "synonyms": "solenoid",
+      "audio": "solenoid.mp3",
+      "video": null,
+      "image": "solenoid.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 160,
+    "fields": {
+      "word_id": "sprocket_wheel",
+      "subject_id": "mecanica",
+      "definition": "Sprocket Wheel - Mechanical component",
+      "synonyms": "sprocket wheel",
+      "audio": "sprocket_wheel.mp3",
+      "video": null,
+      "image": "sprocket_wheel.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 161,
+    "fields": {
+      "word_id": "steering_column",
+      "subject_id": "mecanica",
+      "definition": "Steering Column - Mechanical component",
+      "synonyms": "steering column",
+      "audio": "steering_column.mp3",
+      "video": null,
+      "image": "steering_column.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 162,
+    "fields": {
+      "word_id": "steering_rack",
+      "subject_id": "mecanica",
+      "definition": "Steering Rack - Mechanical component",
+      "synonyms": "steering rack",
+      "audio": "steering_rack.mp3",
+      "video": null,
+      "image": "steering_rack.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 163,
+    "fields": {
+      "word_id": "step_ladder",
+      "subject_id": "mecanica",
+      "definition": "Step Ladder - Mechanical component",
+      "synonyms": "step ladder",
+      "audio": "step_ladder.mp3",
+      "video": null,
+      "image": "step_ladder.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 164,
+    "fields": {
+      "word_id": "strut",
+      "subject_id": "mecanica",
+      "definition": "Strut - Mechanical component",
+      "synonyms": "strut",
+      "audio": "strut.mp3",
+      "video": null,
+      "image": "strut.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 165,
+    "fields": {
+      "word_id": "sway_bar",
+      "subject_id": "mecanica",
+      "definition": "Sway Bar - Mechanical component",
+      "synonyms": "sway bar",
+      "audio": "sway_bar.mp3",
+      "video": null,
+      "image": "sway_bar.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 166,
+    "fields": {
+      "word_id": "switch_panel",
+      "subject_id": "mecanica",
+      "definition": "Switch Panel - Mechanical component",
+      "synonyms": "switch panel",
+      "audio": "switch_panel.mp3",
+      "video": null,
+      "image": "switch_panel.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 167,
+    "fields": {
+      "word_id": "synchromesh",
+      "subject_id": "mecanica",
+      "definition": "Synchromesh - Mechanical component",
+      "synonyms": "synchromesh",
+      "audio": "synchromesh.mp3",
+      "video": null,
+      "image": "synchromesh.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 168,
+    "fields": {
+      "word_id": "thermostat_valve",
+      "subject_id": "mecanica",
+      "definition": "Thermostat Valve - Mechanical component",
+      "synonyms": "thermostat valve",
+      "audio": "thermostat_valve.mp3",
+      "video": null,
+      "image": "thermostat_valve.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 169,
+    "fields": {
+      "word_id": "tie_rod_end",
+      "subject_id": "mecanica",
+      "definition": "Tie Rod End - Mechanical component",
+      "synonyms": "tie rod end",
+      "audio": "tie_rod_end.mp3",
+      "video": null,
+      "image": "tie_rod_end.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 170,
+    "fields": {
+      "word_id": "timing_chain",
+      "subject_id": "mecanica",
+      "definition": "Timing Chain - Mechanical component",
+      "synonyms": "timing chain",
+      "audio": "timing_chain.mp3",
+      "video": null,
+      "image": "timing_chain.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 171,
+    "fields": {
+      "word_id": "timing_gear",
+      "subject_id": "mecanica",
+      "definition": "Timing Gear - Mechanical component",
+      "synonyms": "timing gear",
+      "audio": "timing_gear.mp3",
+      "video": null,
+      "image": "timing_gear.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 172,
+    "fields": {
+      "word_id": "tire",
+      "subject_id": "mecanica",
+      "definition": "Tire - Mechanical component",
+      "synonyms": "tire",
+      "audio": "tire.mp3",
+      "video": null,
+      "image": "tire.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 173,
+    "fields": {
+      "word_id": "toe",
+      "subject_id": "mecanica",
+      "definition": "Toe - Mechanical component",
+      "synonyms": "toe",
+      "audio": "toe.mp3",
+      "video": null,
+      "image": "toe.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 174,
+    "fields": {
+      "word_id": "tool_box",
+      "subject_id": "mecanica",
+      "definition": "Tool Box - Mechanical component",
+      "synonyms": "tool box",
+      "audio": "tool_box.mp3",
+      "video": null,
+      "image": "tool_box.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 175,
+    "fields": {
+      "word_id": "torque_converter",
+      "subject_id": "mecanica",
+      "definition": "Torque Converter - Mechanical component",
+      "synonyms": "torque converter",
+      "audio": "torque_converter.mp3",
+      "video": null,
+      "image": "torque_converter.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 176,
+    "fields": {
+      "word_id": "torque_wrench",
+      "subject_id": "mecanica",
+      "definition": "Torque Wrench - Mechanical component",
+      "synonyms": "torque wrench",
+      "audio": "torque_wrench.mp3",
+      "video": null,
+      "image": "torque_wrench.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 177,
+    "fields": {
+      "word_id": "track",
+      "subject_id": "mecanica",
+      "definition": "Track - Mechanical component",
+      "synonyms": "track",
+      "audio": "track.mp3",
+      "video": null,
+      "image": "track.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 178,
+    "fields": {
+      "word_id": "track_chain",
+      "subject_id": "mecanica",
+      "definition": "Track Chain - Mechanical component",
+      "synonyms": "track chain",
+      "audio": "track_chain.mp3",
+      "video": null,
+      "image": "track_chain.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 179,
+    "fields": {
+      "word_id": "track_pad",
+      "subject_id": "mecanica",
+      "definition": "Track Pad - Mechanical component",
+      "synonyms": "track pad",
+      "audio": "track_pad.mp3",
+      "video": null,
+      "image": "track_pad.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 180,
+    "fields": {
+      "word_id": "track_roller",
+      "subject_id": "mecanica",
+      "definition": "Track Roller - Mechanical component",
+      "synonyms": "track roller",
+      "audio": "track_roller.mp3",
+      "video": null,
+      "image": "track_roller.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 181,
+    "fields": {
+      "word_id": "transfer_case",
+      "subject_id": "mecanica",
+      "definition": "Transfer Case - Mechanical component",
+      "synonyms": "transfer case",
+      "audio": "transfer_case.mp3",
+      "video": null,
+      "image": "transfer_case.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 182,
+    "fields": {
+      "word_id": "transmission_fluid",
+      "subject_id": "mecanica",
+      "definition": "Transmission Fluid - Mechanical component",
+      "synonyms": "transmission fluid",
+      "audio": "transmission_fluid.mp3",
+      "video": null,
+      "image": "transmission_fluid.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 183,
+    "fields": {
+      "word_id": "turbo_hose",
+      "subject_id": "mecanica",
+      "definition": "Turbo Hose - Mechanical component",
+      "synonyms": "turbo hose",
+      "audio": "turbo_hose.mp3",
+      "video": null,
+      "image": "turbo_hose.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 184,
+    "fields": {
+      "word_id": "turbocharger",
+      "subject_id": "mecanica",
+      "definition": "Turbocharger - Mechanical component",
+      "synonyms": "turbocharger",
+      "audio": "turbocharger.mp3",
+      "video": null,
+      "image": "turbocharger.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 185,
+    "fields": {
+      "word_id": "undercarriage",
+      "subject_id": "mecanica",
+      "definition": "Undercarriage - Mechanical component",
+      "synonyms": "undercarriage",
+      "audio": "undercarriage.mp3",
+      "video": null,
+      "image": "undercarriage.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 186,
+    "fields": {
+      "word_id": "universal_joint",
+      "subject_id": "mecanica",
+      "definition": "Universal Joint - Mechanical component",
+      "synonyms": "universal joint",
+      "audio": "universal_joint.mp3",
+      "video": null,
+      "image": "universal_joint.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 187,
+    "fields": {
+      "word_id": "valve_block",
+      "subject_id": "mecanica",
+      "definition": "Valve Block - Mechanical component",
+      "synonyms": "valve block",
+      "audio": "valve_block.mp3",
+      "video": null,
+      "image": "valve_block.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 188,
+    "fields": {
+      "word_id": "valve_spring",
+      "subject_id": "mecanica",
+      "definition": "Valve Spring - Mechanical component",
+      "synonyms": "valve spring",
+      "audio": "valve_spring.mp3",
+      "video": null,
+      "image": "valve_spring.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 189,
+    "fields": {
+      "word_id": "warning_beacon",
+      "subject_id": "mecanica",
+      "definition": "Warning Beacon - Mechanical component",
+      "synonyms": "warning beacon",
+      "audio": "warning_beacon.mp3",
+      "video": null,
+      "image": "warning_beacon.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 190,
+    "fields": {
+      "word_id": "warning_light",
+      "subject_id": "mecanica",
+      "definition": "Warning Light - Mechanical component",
+      "synonyms": "warning light",
+      "audio": "warning_light.mp3",
+      "video": null,
+      "image": "warning_light.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 191,
+    "fields": {
+      "word_id": "water_outlet",
+      "subject_id": "mecanica",
+      "definition": "Water Outlet - Mechanical component",
+      "synonyms": "water outlet",
+      "audio": "water_outlet.mp3",
+      "video": null,
+      "image": "water_outlet.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 192,
+    "fields": {
+      "word_id": "water_pump",
+      "subject_id": "mecanica",
+      "definition": "Water Pump - Mechanical component",
+      "synonyms": "water pump",
+      "audio": "water_pump.mp3",
+      "video": null,
+      "image": "water_pump.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 193,
+    "fields": {
+      "word_id": "wheel_bearing",
+      "subject_id": "mecanica",
+      "definition": "Wheel Bearing - Mechanical component",
+      "synonyms": "wheel bearing",
+      "audio": "wheel_bearing.mp3",
+      "video": null,
+      "image": "wheel_bearing.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 194,
+    "fields": {
+      "word_id": "wheel_hub_cap",
+      "subject_id": "mecanica",
+      "definition": "Wheel Hub Cap - Mechanical component",
+      "synonyms": "wheel hub cap",
+      "audio": "wheel_hub_cap.mp3",
+      "video": null,
+      "image": "wheel_hub_cap.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 195,
+    "fields": {
+      "word_id": "wiring_loom",
+      "subject_id": "mecanica",
+      "definition": "Wiring Loom - Mechanical component",
+      "synonyms": "wiring loom",
+      "audio": "wiring_loom.mp3",
+      "video": null,
+      "image": "wiring_loom.png"
+    }
+  },
+  {
+    "model": "users.digitaldictionary",
+    "pk": 196,
+    "fields": {
+      "word_id": "work_bench",
+      "subject_id": "mecanica",
+      "definition": "Work Bench - Mechanical component",
+      "synonyms": "work bench",
+      "audio": "work_bench.mp3",
+      "video": null,
+      "image": "work_bench.png"
+    }
+  }
+]

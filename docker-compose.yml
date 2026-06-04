@@ -12,12 +12,14 @@ services:
       - "${DJANGO_PORT}:8000"
     volumes:
       - ./backend:/app
+      - ./media:/app/media
     working_dir: /app
     command: >
       sh -c "
       chmod +x /app/wait-for-db.sh &&
       /app/wait-for-db.sh &&
       python manage.py migrate &&
+      python manage.py loaddata fixtures/mecanica.json &&
       python manage.py runserver 0.0.0.0:8000
       "
     networks:
