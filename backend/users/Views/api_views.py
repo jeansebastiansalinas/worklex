@@ -47,12 +47,14 @@ class RegisterAPIView(APIView):
             return Response({'error': error}, status=status.HTTP_400_BAD_REQUEST)
         return Response(data, status=status.HTTP_201_CREATED)
 
-
 class MeAPIView(APIView):
     permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request):
-        return Response(AuthController.get_me(request.user))
+        data, error = AuthController.get_me(request.auth)  # ← request.auth en vez de request.user
+        if error:
+            return Response({'error': error}, status=status.HTTP_404_NOT_FOUND)
+        return Response(data)
 
 
 class PersonViewSet(viewsets.ViewSet):

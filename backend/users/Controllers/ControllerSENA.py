@@ -1,7 +1,7 @@
 from django.contrib.auth.hashers import check_password, make_password
 from rest_framework_simplejwt.tokens import RefreshToken
 
-from ..Models.modelsSENA import Person, User, Subject, DigitalDictionary, TestResult
+from ..Models.modelsSENA import Person, User, Subject, DigitalDictionary, TestResult, RoleAccess
 
 
 # ─── Mapas de roles y estados ────────────────────────────────────────────────
@@ -71,7 +71,9 @@ def get_permissions_by_role(role):
 
 def _build_user_response(user, person):
     """Construye el dict de usuario que espera el frontend."""
-    frontend_role = ROLE_MAP.get(user.role_id, 'student')
+    # ✅ user.role es el objeto RoleAccess, accedemos a role_id desde ahí
+    role_str = user.role.role_id if user.role else 'APRENDIZ'
+    frontend_role = ROLE_MAP.get(role_str, 'student')
     return {
         'id': str(user.user_id),
         'name': f"{person.first_name} {person.last_name}",
@@ -102,10 +104,6 @@ class AuthController:
 
     @staticmethod
     def login(email, password):
-        """
-        Autentica un usuario.
-        Retorna (data_dict, None) en éxito o (None, error_str) en fallo.
-        """
         try:
             person = Person.objects.get(email=email)
         except Person.DoesNotExist:
@@ -131,10 +129,6 @@ class AuthController:
 
     @staticmethod
     def register(validated_data):
-        """
-        Registra una nueva persona + usuario.
-        Retorna (data_dict, None) en éxito o (None, error_str) en fallo.
-        """
         if Person.objects.filter(email=validated_data['email']).exists():
             return None, 'Este correo ya está registrado'
 
@@ -152,9 +146,15 @@ class AuthController:
             status='ACTIVO',
         )
 
+        # ✅ Obtener objeto RoleAccess, no string
+        role = RoleAccess.objects.filter(role_id='APRENDIZ').first()
+        if not role:
+            person.delete()
+            return None, 'El rol APRENDIZ no existe. Contacta al administrador.'
+
         user = User.objects.create(
             person=person,
-            role_id='APRENDIZ',
+            role=role,            # ← objeto RoleAccess
             status='EN_FORMACION',
             mfa='',
         )
@@ -167,10 +167,15 @@ class AuthController:
             'user': _build_user_response(user, person),
         }, None
 
-    @staticmethod
-    def get_me(user):
-        """Devuelve el perfil del usuario autenticado."""
-        return _build_user_response(user, user.person)
+
+@staticmethod
+def get_me(auth_token):
+    user_id = auth_token.payload.get('user_id')
+    try:
+        user = User.objects.select_related('person').get(pk=user_id)
+        return _build_user_response(user, user.person), None
+    except User.DoesNotExist:
+        return None, 'Usuario no encontrado'
 
 
 # ─── Persons ──────────────────────────────────────────────────────────────────
@@ -240,10 +245,11 @@ class UserController:
 
     @staticmethod
     def list_all(role_filter=None):
-        queryset = User.objects.select_related('person').all()
+        queryset = User.objects.select_related('person', 'role').all()
         if role_filter:
             backend_role = ROLE_MAP_REVERSE.get(role_filter, role_filter.upper())
-            queryset = queryset.filter(role_id=backend_role)
+            # ✅ filtrar por role__role_id en lugar de role_id
+            queryset = queryset.filter(role__role_id=backend_role)
 
         users = []
         for user in queryset:
@@ -256,7 +262,7 @@ class UserController:
     @staticmethod
     def get_by_id(user_id):
         try:
-            user = User.objects.select_related('person').get(pk=user_id)
+            user = User.objects.select_related('person', 'role').get(pk=user_id)
             return user, None
         except User.DoesNotExist:
             return None, 'Usuario no encontrado'
@@ -281,7 +287,11 @@ class UserController:
             return None, 'Usuario no encontrado'
 
         backend_role = ROLE_MAP_REVERSE.get(new_frontend_role, 'APRENDIZ')
-        user.role_id = backend_role
+        # ✅ buscar objeto RoleAccess y asignarlo
+        role = RoleAccess.objects.filter(role_id=backend_role).first()
+        if not role:
+            return None, f'Rol {backend_role} no encontrado'
+        user.role = role
         user.save()
         return new_frontend_role, None
 
