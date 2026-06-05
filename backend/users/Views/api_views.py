@@ -2,6 +2,7 @@ from rest_framework import viewsets, status, permissions
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.decorators import action
+import random
 
 from ..Controllers.ControllerSENA import (
     AuthController,
@@ -19,6 +20,7 @@ from ..serializers import (
     DigitalDictionarySerializer,
     TestResultSerializer,
 )
+from ..Models.modelsSENA import DigitalDictionary, User, TestResult
 
 
 class LoginAPIView(APIView):
@@ -187,11 +189,10 @@ class TestResultViewSet(viewsets.ViewSet):
         if error:
             return Response({'error': error}, status=status.HTTP_404_NOT_FOUND)
         return Response({'feedback': result.feedback})
-    
-import random
-from ..Models.modelsSENA import DigitalDictionary
+
 
 DISTRACTORS_POOL = ['gear', 'valve', 'pipe', 'bolt', 'wrench', 'lever', 'pump', 'cable', 'hose', 'filter', 'bearing', 'shaft']
+
 
 class QuizAPIView(APIView):
     permission_classes = [permissions.AllowAny]
@@ -210,12 +211,9 @@ class QuizAPIView(APIView):
 
         questions = []
         for i, word in enumerate(selected):
-            # Distractores: otras palabras reales + pool externo, sin repetir la correcta
             real_distractors = [w for w in real_words if w != word.word_id]
             extra = [w for w in DISTRACTORS_POOL if w not in real_words and w != word.word_id]
-            
             all_distractors = real_distractors + extra
-            # Tomar exactamente 3, rellenando si hace falta
             distractors = all_distractors[:3]
 
             options = distractors + [word.word_id]
@@ -234,3 +232,77 @@ class QuizAPIView(APIView):
             })
 
         return Response(questions)
+
+
+class SaveQuizResultAPIView(APIView):
+    permission_classes = [permissions.AllowAny]
+
+    def post(self, request):
+        try:
+            user_id = request.data.get('user_id')
+            score = request.data.get('score', 0)
+            correct_answers = request.data.get('correct_answers', 0)
+            total_questions = request.data.get('total_questions', 10)
+
+            if score >= 90: level = 'C2'
+            elif score >= 80: level = 'C1'
+            elif score >= 70: level = 'B2'
+            elif score >= 60: level = 'B1'
+            elif score >= 50: level = 'A2'
+            else: level = 'A1'
+
+            user = User.objects.get(user_id=user_id)
+            result = TestResult.objects.create(
+                user=user,
+                score=score,
+                level=level,
+                correct_answers=correct_answers,
+                total_questions=total_questions,
+            )
+            return Response({
+                'id': result.id,
+                'score': result.score,
+                'level': result.level,
+            }, status=status.HTTP_201_CREATED)
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)
+
+
+class UserStatsAPIView(APIView):
+    permission_classes = [permissions.AllowAny]
+
+    def get(self, request, user_id):
+        try:
+            user = User.objects.get(user_id=user_id)
+            results = TestResult.objects.filter(user=user).order_by('-created_at')
+
+            if not results.exists():
+                return Response({
+                    'tests_completed': 0,
+                    'average_score': 0,
+                    'current_level': 'A1',
+                    'recent_tests': [],
+                })
+
+            scores = [r.score for r in results]
+            average = round(sum(scores) / len(scores))
+
+            recent = []
+            for r in results[:5]:
+                recent.append({
+                    'id': r.id,
+                    'score': r.score,
+                    'level': r.level,
+                    'correct_answers': r.correct_answers,
+                    'total_questions': r.total_questions,
+                    'date': r.created_at.strftime('%d %b %Y'),
+                })
+
+            return Response({
+                'tests_completed': results.count(),
+                'average_score': average,
+                'current_level': results.first().level,
+                'recent_tests': recent,
+            })
+        except Exception as e:
+            return Response({'error': str(e)}, status=status.HTTP_400_BAD_REQUEST)

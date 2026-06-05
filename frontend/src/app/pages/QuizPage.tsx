@@ -80,11 +80,11 @@ export function QuizPage() {
     }
   };
 
-  const handleAnswerClick = (answerIndex: number) => {
+ const handleAnswerClick = (answerIndex: number) => {
     if (answerState !== "idle") return;
     setSelectedAnswer(answerIndex);
     const isCorrect = answerIndex === question.correctAnswer;
-    setUserAnswers(prev => [...prev, {
+    setUserAnswers((prev: UserAnswer[]) => [...prev, {
       questionId: question.id,
       question: question.word_id,
       userAnswer: answerIndex,
@@ -92,24 +92,37 @@ export function QuizPage() {
       isCorrect,
       category: question.category,
     }]);
-    if (isCorrect) { setAnswerState("correct"); setScore(s => s + 1); }
+    if (isCorrect) { setAnswerState("correct"); setScore((s: number) => s + 1); }
     else { setAnswerState("incorrect"); }
     setTimeout(() => handleNextQuestion(), 2000);
   };
 
-  const handleNextQuestion = () => {
+    const handleNextQuestion = () => {
     if (currentQuestion + 1 < questions.length) {
-      setCurrentQuestion(q => q + 1);
+      setCurrentQuestion((q: number) => q + 1);
       setTimeLeft(30);
       setSelectedAnswer(null);
       setAnswerState("idle");
     } else {
       const finalScore = Math.round((score / questions.length) * 100);
+      const userId = localStorage.getItem("userId");
+
+      fetch('http://localhost:8000/api/quiz/save/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          user_id: userId,
+          score: finalScore,
+          correct_answers: score,
+          total_questions: questions.length,
+        }),
+      }).catch(err => console.error('Error guardando resultado:', err));
+
       localStorage.setItem("quizScore", finalScore.toString());
       localStorage.setItem("correctAnswers", score.toString());
       localStorage.setItem("lastTestResult", JSON.stringify({
         id: Date.now().toString(),
-        userId: localStorage.getItem("userId"),
+        userId,
         userName: localStorage.getItem("userName"),
         score: finalScore,
         correctAnswers: score,
@@ -117,6 +130,7 @@ export function QuizPage() {
         answers: userAnswers,
         completedAt: new Date().toISOString(),
       }));
+
       navigate("/results");
     }
   };

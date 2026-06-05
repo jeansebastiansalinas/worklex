@@ -7,7 +7,7 @@ from .Views.api_views import (
     LoginAPIView, RegisterAPIView, MeAPIView,
     PersonViewSet, UserViewSet, SubjectViewSet,
     DigitalDictionaryViewSet, TestResultViewSet,
-    QuizAPIView
+    QuizAPIView, SaveQuizResultAPIView, UserStatsAPIView
 )
 
 # Router para los ViewSets
@@ -26,6 +26,8 @@ urlpatterns = [
     path('auth/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('auth/me/', MeAPIView.as_view(), name='me'),
     path('quiz/', QuizAPIView.as_view(), name='quiz'),
+    path('quiz/save/', SaveQuizResultAPIView.as_view(), name='quiz-save'),
+   path('stats/<int:user_id>/', UserStatsAPIView.as_view(), name='user-stats'),
     
     # Rutas de los ViewSets
     path('', include(router.urls)),
