@@ -45,6 +45,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
         localStorage.setItem('userName', userData.name);
         localStorage.setItem('userRole', userData.role);
         localStorage.setItem('userId', userData.id);
+        localStorage.setItem('userProgram', userData.program || '');
         localStorage.setItem('userPermissions', JSON.stringify(userData.permissions));
       } catch (error) {
         // Token invalido, limpiar storage
@@ -71,6 +72,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       // Compatibilidad con el sistema existente
       localStorage.setItem('userName', response.user.name);
       localStorage.setItem('userRole', response.user.role);
+      localStorage.setItem('userProgram', response.user.program || '');
       localStorage.setItem('userId', response.user.id);
       localStorage.setItem('userPermissions', JSON.stringify(response.user.permissions));
     } catch (err) {
@@ -92,6 +94,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     // Compatibilidad con el sistema existente
     localStorage.setItem('userName', response.user.name);
     localStorage.setItem('userRole', response.user.role);
+    localStorage.setItem('userProgram', response.user.program || '');
     localStorage.setItem('userId', response.user.id);
     localStorage.setItem('userPermissions', JSON.stringify(response.user.permissions));
   };
@@ -105,6 +108,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     setUser(updatedUser);
     localStorage.setItem('userName', updatedUser.name);
     localStorage.setItem('userRole', updatedUser.role);
+    localStorage.setItem('userProgram', updatedUser.program || '');
     localStorage.setItem('userId', updatedUser.id);
     localStorage.setItem('userPermissions', JSON.stringify(updatedUser.permissions));
   };

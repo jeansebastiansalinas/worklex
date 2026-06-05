@@ -125,7 +125,6 @@ function getAuthHeaders(): HeadersInit {
 async function handleResponse<T>(response: Response): Promise<T> {
   if (!response.ok) {
     const error = await response.json().catch(() => ({ error: 'Error de conexion' }));
-    console.log("HANDLE RESPONSE ERROR:", error, "STATUS:", response.status);
     
     // Solo intentar refresh si hay token guardado (no en login)
     if (response.status === 401 && localStorage.getItem('accessToken')) {
@@ -329,18 +328,20 @@ export async function getTestResults(userId?: string): Promise<ApiTestResult[]> 
 }
 
 export async function createTestResult(resultData: Omit<ApiTestResult, 'id' | 'userName' | 'completedAt'>): Promise<ApiTestResult> {
+  const payload = {
+    user: resultData.userId,
+    score: resultData.score,
+    level: resultData.level,
+    correct_answers: resultData.correctAnswers,
+    total_questions: resultData.totalQuestions,
+    feedback: resultData.feedback,
+    duration: resultData.duration,
+  };
+  
   const response = await fetch(`${API_BASE}/results/`, {
     method: 'POST',
     headers: getAuthHeaders(),
-    body: JSON.stringify({
-      user: resultData.userId,
-      score: resultData.score,
-      level: resultData.level,
-      correct_answers: resultData.correctAnswers,
-      total_questions: resultData.totalQuestions,
-      feedback: resultData.feedback,
-      duration: resultData.duration,
-    }),
+    body: JSON.stringify(payload),
   });
   
   return handleResponse<ApiTestResult>(response);
